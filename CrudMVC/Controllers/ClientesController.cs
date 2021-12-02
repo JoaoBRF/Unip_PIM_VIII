@@ -42,7 +42,7 @@ namespace CrudMVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Matricula,Nome,DataNascimento,Email,Telefone,Endereco,Empresa,Funcao,Ativo")] Cliente cliente)
+        public ActionResult Create([Bind(Include = "Id,,Nome,Cpf,Ativo,Logradouro,Numero,Cep,Bairro,Cidade,Estado,DDD,Telefone")] Cliente cliente)
         {
             if (ModelState.IsValid)
             {
